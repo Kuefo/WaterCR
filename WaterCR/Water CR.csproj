@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF90EE30-E27E-4AA9-B925-A770F4B33CA4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Water CR</RootNamespace>
+    <AssemblyName>Water CR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Water CR.ico</ApplicationIcon>
+    <StartupObject>Water_CR.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DDSReader">
+      <HintPath>C:\Users\Loki\Downloads\Water CR\DDSReader.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v20.1.Win">
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v20.1.UI">
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Dialogs.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Images.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Map.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.1.Drawing">
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1.UI">
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard">
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.1.Presets">
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.1.Win">
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v20.1.UI">
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1">
+    </Reference>
+    <Reference Include="DiscordRPC">
+      <HintPath>C:\Users\Loki\Downloads\Water CR\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="JRPC">
+      <HintPath>..\Shutter CR\bin\Debug\JRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Leaf.xNet">
+      <HintPath>C:\Users\Loki\Downloads\Water CR\Leaf.xNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Loki\Downloads\Water CR\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SafeGuard">
+      <HintPath>C:\Users\Loki\Downloads\Water CR\SafeGuard.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="xDevkit">
+      <HintPath>G:\Users\Loki\source\repos\BlackOps2Tool\BO2Tool\bin\Release\xDevkit.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\GG_Winform_Example\API.cs" />
+    <Compile Include="Auth\GG_Winform_Example\App.cs" />
+    <Compile Include="Auth\GG_Winform_Example\ApplicationSettings.cs" />
+    <Compile Include="Auth\GG_Winform_Example\Constants.cs" />
+    <Compile Include="Auth\GG_Winform_Example\Encryption.cs" />
+    <Compile Include="Auth\GG_Winform_Example\InfoManager.cs" />
+    <Compile Include="Auth\GG_Winform_Example\OnProgramStart.cs" />
+    <Compile Include="Auth\GG_Winform_Example\Security.cs" />
+    <Compile Include="Auth\GG_Winform_Example\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Water_CR\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Water_CR\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Water_CR\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Water_CR\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Water_CR\Program.cs" />
+    <Compile Include="Water_CR\Properties\Resources.cs" />
+    <Compile Include="Water_CR\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Water_CR\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Water_CR\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Water CR.exe.licenses" />
+    <EmbeddedResource Include="Water_CR\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Water_CR\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Water_CR\Properties\Resources.resources" />
+    <EmbeddedResource Include="Water_CR\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Water_CR\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
